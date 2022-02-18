@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3faf3d32-79a2-4706-8bb7-6439f2c2ae37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trivial_enunciado.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/smellytrivial/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/smellytrivial/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TrivialTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TrivialTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="3faf3d32-79a2-4706-8bb7-6439f2c2ae37" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
