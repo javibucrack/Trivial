@@ -31,8 +31,14 @@ public class Game {
     }
 
     public boolean esJugable() {
+        if (cuantosJugadores() < 2) {
+            System.out.println("La partida no es jugable si hay menos de dos jugadores");
+            return false;
+        }
         return (cuantosJugadores() >= 2);
+
     }
+
 
     public boolean agregar(String playerName) {
 
