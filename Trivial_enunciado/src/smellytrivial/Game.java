@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Game {
-    ArrayList jugadores = new ArrayList();
+    ArrayList<String> jugadores = new ArrayList<>();
     int[] posiciones = new int[6];
     int[] monederos = new int[6];
     boolean[] enCasillaCastigo = new boolean[6];
 
-    LinkedList preguntasCultura = new LinkedList();
-    LinkedList preguntasCiencias = new LinkedList();
-    LinkedList preguntasDeportes = new LinkedList();
-    LinkedList preguntasMusica = new LinkedList();
+    LinkedList<String> preguntasCultura = new LinkedList<>();
+    LinkedList<String> preguntasCiencias = new LinkedList<>();
+    LinkedList<String> preguntasDeportes = new LinkedList<>();
+    LinkedList<String> preguntasMusica = new LinkedList<>();
 
     int jugadorActual = 0;
     boolean estaSaliendoDeLaCarcel;
@@ -90,13 +90,13 @@ public class Game {
     }
 
     private void hacerPregunta() {
-        if (categoriaActual() == "Cultura popular")
+        if (categoriaActual().equals("Cultura popular"))
             System.out.println(preguntasCultura.removeFirst());
-        if (categoriaActual() == "Ciencias")
+        if (categoriaActual().equals("Ciencias"))
             System.out.println(preguntasCiencias.removeFirst());
-        if (categoriaActual() == "Deportes")
+        if (categoriaActual().equals("Deportes"))
             System.out.println(preguntasDeportes.removeFirst());
-        if (categoriaActual() == "Música")
+        if (categoriaActual().equals("Música"))
             System.out.println(preguntasMusica.removeFirst());
     }
 
@@ -126,12 +126,12 @@ public class Game {
 
                 boolean ganador = jugadorHaGanado();
                 siguienteJugador();
-                if (jugador_igual_a_tamaño(jugadorActual, jugadores.size()));
+                if (jugador_igual_a_tamaño(jugadorActual, jugadores.size())) ;
 
                 return ganador;
             } else {
                 siguienteJugador();
-                if (jugador_igual_a_tamaño(jugadorActual, jugadores.size()));
+                if (jugador_igual_a_tamaño(jugadorActual, jugadores.size())) ;
                 return true;
             }
 
@@ -167,8 +167,8 @@ public class Game {
         return true;
     }
 
-    private int siguienteJugador() {
-        return jugadorActual++;
+    public void siguienteJugador() {
+        jugadorActual++;
     }
 
 

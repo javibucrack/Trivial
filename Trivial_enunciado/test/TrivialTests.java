@@ -58,6 +58,30 @@ public class TrivialTests {
         Assertions.assertFalse(actual);
     }
 
+    @Test
+    public void pasar_al_siguiente_jugador() {
+        Game game = new Game();
+        game.agregar("Juan");
+        game.agregar("Maria");
 
+        game.siguienteJugador();
+
+        String expected = "La nueva posición de Maria es 0";
+
+        // Esto es porque si no usases el game.siguienteJugador() saldría la posición de Juan en lugar de la de Maria
+
+        Assertions.assertEquals(expected, game.nuevaPosicionJugador());
+    }
+
+    @Test
+    public void respuesta_correcta(){
+        Game game =new Game();
+        game.agregar("Juan");
+        game.agregar("Maria");
+
+        boolean respuesta= game.fueRespuestaCorrecta();
+
+        Assertions.assertTrue(respuesta);
+    }
 
 }

@@ -16,5 +16,9 @@ Otro test la_partida_es_jugable() (para saber si hay más de dos jugadpres y por
 ## Problema 5
 Editamos el método jugadorActual++ que estaba repetido en varios sitios, y lo extraemos a un nuevo método llamado siguienteJugador++ el cual devuelve el jugadorActual++.
 
+Creamos un test pasar_al_siguiente_jugador() para comprobar que al usar ese método extraído, sigue funcionando perfectamente el hecho de pasar al siguiente jugador.
+
 ## Problema 6
 Editamos el método fueRespuestaCorrecta extrayendo el código duplicado, en mi caso, la condicional que decía que el jugador actual es igual al tamaño de jugadores.
+
+Creamos un test respuesta_correcta() para comprobar que extrayendo ese código duplicado sigue funcionando perfectamente el método de fueRespuestaCorrecta().
