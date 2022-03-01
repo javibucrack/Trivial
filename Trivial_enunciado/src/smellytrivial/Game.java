@@ -31,8 +31,8 @@ public class Game {
     }
 
     public boolean esJugable() {
-        if (cuantosJugadores() < 2) {
-            System.out.println("La partida no es jugable si hay menos de dos jugadores");
+        if (cuantosJugadores() < 2 || cuantosJugadores() > 6) {
+            System.out.println("La partida no es jugable si hay menos de dos jugadores o más de seis jugadores");
             return false;
         }
         return (cuantosJugadores() >= 2);
@@ -44,9 +44,9 @@ public class Game {
 
 
         jugadores.add(playerName);
-        posiciones[cuantosJugadores()] = 0;
-        monederos[cuantosJugadores()] = 0;
-        enCasillaCastigo[cuantosJugadores()] = false;
+        posiciones[cuantosJugadores() - 1] = 0;
+        monederos[cuantosJugadores() - 1] = 0;
+        enCasillaCastigo[cuantosJugadores() - 1] = false;
 
         System.out.println(playerName + " se ha unido a la partida");
         System.out.println("Es el jugador número " + jugadores.size());

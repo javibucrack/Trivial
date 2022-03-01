@@ -38,6 +38,24 @@ public class TrivialTests {
     }
 
     @Test
+    public void hay_como_maximo_6_juagdores() {
+        Game game = new Game();
+
+        game.agregar("Juan");
+        game.agregar("Maria");
+        game.agregar("Antonio");
+        game.agregar("Javier");
+        game.agregar("Pepe");
+        game.agregar("Pepa");
+
+        int expected = 6;
+
+        int actual = game.cuantosJugadores();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void la_partida_es_jugable() {
         Game game = new Game();
         game.agregar("Juan");
@@ -74,12 +92,12 @@ public class TrivialTests {
     }
 
     @Test
-    public void respuesta_correcta(){
-        Game game =new Game();
+    public void respuesta_correcta() {
+        Game game = new Game();
         game.agregar("Juan");
         game.agregar("Maria");
 
-        boolean respuesta= game.fueRespuestaCorrecta();
+        boolean respuesta = game.fueRespuestaCorrecta();
 
         Assertions.assertTrue(respuesta);
     }
