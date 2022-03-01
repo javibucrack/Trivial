@@ -13,6 +13,11 @@ Editamos el código del método esJugable() para que cuando haya menos de dos ju
 Creamos un test siempre_hay_2_jugadores_minimo() (para comprobar que se detecta bien el número de jugadores que hay).
 Otro test la_partida_es_jugable() (para saber si hay más de dos jugadpres y por lo tanto la partida es jugable). Y el test la_partida_no_es_jugable()(para saber si hay menos de dos jugadores y por lo tanto la partida no es jugable).
 
+## Problema 2
+Editamos el método de agregar para que funcione bien a la hora de detectar los seis jugadores de la partida que habrá como máximo.
+
+Creamos el test hay_como_maximo_6_juagdores() para comprobar que efectivamente si añadimos 6 jugadores a la partida ya es jugabley no salta el error.
+
 ## Problema 5
 Editamos el método jugadorActual++ que estaba repetido en varios sitios, y lo extraemos a un nuevo método llamado siguienteJugador++ el cual devuelve el jugadorActual++.
 
