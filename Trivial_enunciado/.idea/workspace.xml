@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3faf3d32-79a2-4706-8bb7-6439f2c2ae37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/smellytrivial/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/smellytrivial/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager" selected="JUnit.TrivialTests">
+    <configuration name="GameLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="launcher.GameLauncher" />
+      <module name="Trivial_enunciado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="launcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrivialTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Trivial_enunciado" />
       <option name="PACKAGE_NAME" value="" />
@@ -44,16 +57,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TrivialTests" />
       <option name="METHOD_NAME" value="la_partida_es_jugable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrivialTests.la_partida_no_es_jugable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Trivial_enunciado" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrivialTests" />
-      <option name="METHOD_NAME" value="la_partida_no_es_jugable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,10 +85,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TrivialTests" />
+        <item itemvalue="Application.GameLauncher" />
         <item itemvalue="JUnit.TrivialTests.la_partida_no_es_jugable_si_hay_mas_de_6_personas" />
         <item itemvalue="JUnit.TrivialTests.la_partida_no_es_jugable_si_hay_menos_de_2_personas" />
         <item itemvalue="JUnit.TrivialTests.la_partida_es_jugable" />
-        <item itemvalue="JUnit.TrivialTests.la_partida_no_es_jugable" />
       </list>
     </recent_temporary>
   </component>

@@ -102,15 +102,15 @@ public class Game {
 
 
     private String categoriaActual() {
-        if (posiciones[jugadorActual] == 0) return "Cultura popular";
-        if (posiciones[jugadorActual] == 4) return "Cultura popular";
-        if (posiciones[jugadorActual] == 8) return "Cultura popular";
-        if (posiciones[jugadorActual] == 1) return "Ciencias";
-        if (posiciones[jugadorActual] == 5) return "Ciencias";
-        if (posiciones[jugadorActual] == 9) return "Ciencias";
-        if (posiciones[jugadorActual] == 2) return "Deportes";
-        if (posiciones[jugadorActual] == 6) return "Deportes";
-        if (posiciones[jugadorActual] == 10) return "Deportes";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 0)) return "Cultura popular";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 4)) return "Cultura popular";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 8)) return "Cultura popular";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 1)) return "Ciencias";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 5)) return "Ciencias";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 9)) return "Ciencias";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 2)) return "Deportes";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 6)) return "Deportes";
+        if (jugador_igual_a_tamaño(posiciones[jugadorActual], 10)) return "Deportes";
         return "Música";
     }
 
@@ -126,12 +126,12 @@ public class Game {
 
                 boolean ganador = jugadorHaGanado();
                 siguienteJugador();
-                if (jugadorActual == jugadores.size()) jugadorActual = 0;
+                if (jugador_igual_a_tamaño(jugadorActual, jugadores.size()));
 
                 return ganador;
             } else {
                 siguienteJugador();
-                if (jugadorActual == jugadores.size()) jugadorActual = 0;
+                if (jugador_igual_a_tamaño(jugadorActual, jugadores.size()));
                 return true;
             }
 
@@ -147,10 +147,14 @@ public class Game {
 
             boolean ganador = jugadorHaGanado();
             siguienteJugador();
-            if (jugadorActual == jugadores.size()) jugadorActual = 0;
+            if (jugador_igual_a_tamaño(jugadorActual, jugadores.size())) jugadorActual = 0;
 
             return ganador;
         }
+    }
+
+    private boolean jugador_igual_a_tamaño(int jugadorActual, int size) {
+        return jugadorActual == size;
     }
 
     public boolean respuestaIncorrecta() {
@@ -159,7 +163,7 @@ public class Game {
         enCasillaCastigo[jugadorActual] = true;
 
         siguienteJugador();
-        if (jugadorActual == jugadores.size()) jugadorActual = 0;
+        if (jugador_igual_a_tamaño(jugadorActual, jugadores.size())) jugadorActual = 0;
         return true;
     }
 
@@ -169,7 +173,7 @@ public class Game {
 
 
     private boolean jugadorHaGanado() {
-        return !(monederos[jugadorActual] == 6);
+        return !(jugador_igual_a_tamaño(monederos[jugadorActual], 6));
     }
 
     public String nuevaPosicionJugador() {
