@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3faf3d32-79a2-4706-8bb7-6439f2c2ae37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TrivialTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TrivialTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,22 +30,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.TrivialTests.la_partida_no_es_jugable">
+  <component name="RunManager" selected="JUnit.TrivialTests">
     <configuration name="TrivialTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Trivial_enunciado" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TrivialTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrivialTests.juan_es_el_jugador_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Trivial_enunciado" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrivialTests" />
-      <option name="METHOD_NAME" value="juan_es_el_jugador_2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,11 +60,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrivialTests.siempre_hay_2_jugadores_minimo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrivialTests.la_partida_no_es_jugable_si_hay_mas_de_6_personas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Trivial_enunciado" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TrivialTests" />
-      <option name="METHOD_NAME" value="siempre_hay_2_jugadores_minimo" />
+      <option name="METHOD_NAME" value="la_partida_no_es_jugable_si_hay_mas_de_6_personas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrivialTests.la_partida_no_es_jugable_si_hay_menos_de_2_personas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Trivial_enunciado" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrivialTests" />
+      <option name="METHOD_NAME" value="la_partida_no_es_jugable_si_hay_menos_de_2_personas" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,11 +82,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TrivialTests.la_partida_no_es_jugable" />
-        <item itemvalue="JUnit.TrivialTests.la_partida_es_jugable" />
         <item itemvalue="JUnit.TrivialTests" />
-        <item itemvalue="JUnit.TrivialTests.juan_es_el_jugador_2" />
-        <item itemvalue="JUnit.TrivialTests.siempre_hay_2_jugadores_minimo" />
+        <item itemvalue="JUnit.TrivialTests.la_partida_no_es_jugable_si_hay_mas_de_6_personas" />
+        <item itemvalue="JUnit.TrivialTests.la_partida_no_es_jugable_si_hay_menos_de_2_personas" />
+        <item itemvalue="JUnit.TrivialTests.la_partida_es_jugable" />
+        <item itemvalue="JUnit.TrivialTests.la_partida_no_es_jugable" />
       </list>
     </recent_temporary>
   </component>
