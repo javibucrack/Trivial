@@ -104,8 +104,8 @@ public class TrivialTests {
 
 
     @Test
-    public void si_alguien_tiene_6_monedas_ha_ganado(){
-        Game game=new Game();
+    public void si_alguien_tiene_6_monedas_ha_ganado() {
+        Game game = new Game();
 
         game.agregar("Juan");
         game.fueRespuestaCorrecta();
@@ -116,14 +116,14 @@ public class TrivialTests {
         game.fueRespuestaCorrecta();
         game.agregar("Maria");
 
-        boolean ganador=game.jugadorHaGanado();
+        boolean ganador = game.jugadorHaGanado();
 
         Assertions.assertTrue(ganador);
     }
 
     @Test
-    public void si_alguien_no_tiene_6_monedas_no_ha_ganado(){
-        Game game=new Game();
+    public void si_alguien_no_tiene_6_monedas_no_ha_ganado() {
+        Game game = new Game();
 
         game.agregar("Juan");
         game.fueRespuestaCorrecta();
@@ -134,9 +134,22 @@ public class TrivialTests {
         game.fueRespuestaCorrecta();
         game.fueRespuestaCorrecta();
 
-        boolean ganador=game.jugadorHaGanado();
+        boolean ganador = game.jugadorHaGanado();
 
         Assertions.assertFalse(ganador);
     }
 
+    @Test
+    public void esta_en_la_carcel() {
+        Game game = new Game();
+        game.agregar("Juan");
+        game.agregar("Maria");
+
+        game.respuestaIncorrecta();
+
+        boolean actual = game.estaEnLaCarcel();
+
+        Assertions.assertTrue(actual);
+    }
+    
 }

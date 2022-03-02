@@ -185,4 +185,12 @@ public class Game {
                 + " es "
                 + posiciones[jugadorActual];
     }
+
+    public boolean estaEnLaCarcel() {
+        boolean carcel = false;
+        if (respuestaIncorrecta() == true) {
+            carcel = true;
+        }
+        return carcel;
+    }
 }
