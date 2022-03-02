@@ -18,6 +18,11 @@ Editamos el método de agregar para que funcione bien a la hora de detectar los 
 
 Creamos el test hay_como_maximo_6_juagdores() para comprobar que efectivamente si añadimos 6 jugadores a la partida ya es jugabley no salta el error.
 
+## Problema 3
+Creamos el método estaEnLaCarcel() para comprobar si alguien tras errar en una pregunta irá a la carcel.
+
+Creamos el test esta_en_la_carcel() para comprobar que si alguien falla una pregunta, irá a la casilla de castigo que es la carcel.
+
 ## Problema 4
 Editamos el método que detecta cuando un jugador ha ganado y también el que detecta cuando una respuesta ha sido respondida correctamente y por lo tanto nos otorgará una moneda dorada.
 

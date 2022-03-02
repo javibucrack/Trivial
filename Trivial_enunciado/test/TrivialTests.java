@@ -151,5 +151,5 @@ public class TrivialTests {
 
         Assertions.assertTrue(actual);
     }
-    
+
 }
