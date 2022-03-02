@@ -18,6 +18,11 @@ Editamos el método de agregar para que funcione bien a la hora de detectar los 
 
 Creamos el test hay_como_maximo_6_juagdores() para comprobar que efectivamente si añadimos 6 jugadores a la partida ya es jugabley no salta el error.
 
+## Problema 4
+Editamos el método que detecta cuando un jugador ha ganado y también el que detecta cuando una respuesta ha sido respondida correctamente y por lo tanto nos otorgará una moneda dorada.
+
+Creamos el test de si_alguien_tiene_6_monedas_ha_ganado() y el de si_alguien_no_tiene_6_monedas_no_ha_ganado() para comprobar que efectivamente las personas ganan al acumular la cantidad de monedas justas (6), o no ganan si no las tienen
+
 ## Problema 5
 Editamos el método jugadorActual++ que estaba repetido en varios sitios, y lo extraemos a un nuevo método llamado siguienteJugador++ el cual devuelve el jugadorActual++.
 
