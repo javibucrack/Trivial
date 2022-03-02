@@ -102,4 +102,41 @@ public class TrivialTests {
         Assertions.assertTrue(respuesta);
     }
 
+
+    @Test
+    public void si_alguien_tiene_6_monedas_ha_ganado(){
+        Game game=new Game();
+
+        game.agregar("Juan");
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+        game.agregar("Maria");
+
+        boolean ganador=game.jugadorHaGanado();
+
+        Assertions.assertTrue(ganador);
+    }
+
+    @Test
+    public void si_alguien_no_tiene_6_monedas_no_ha_ganado(){
+        Game game=new Game();
+
+        game.agregar("Juan");
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+
+        game.agregar("Maria");
+        game.fueRespuestaCorrecta();
+        game.fueRespuestaCorrecta();
+
+        boolean ganador=game.jugadorHaGanado();
+
+        Assertions.assertFalse(ganador);
+    }
+
 }

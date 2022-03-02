@@ -149,7 +149,7 @@ public class Game {
             siguienteJugador();
             if (jugador_igual_a_tamaño(jugadorActual, jugadores.size())) jugadorActual = 0;
 
-            return ganador;
+            return !ganador;
         }
     }
 
@@ -172,8 +172,11 @@ public class Game {
     }
 
 
-    private boolean jugadorHaGanado() {
-        return !(jugador_igual_a_tamaño(monederos[jugadorActual], 6));
+    public boolean jugadorHaGanado() {
+        if (jugador_igual_a_tamaño(monederos[jugadorActual], 6)) {
+            return true;
+        }
+        return false;
     }
 
     public String nuevaPosicionJugador() {
